@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Inovação e tecnologia para o futuro do agronegócio"
+    />
+    <title>AgroFuture</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-content">
+        <a href="#" class="logo">AgroFuture</a>
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="#sobre">Sobre</a>
+          <a href="#inovacao">Inovação</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Transformando o futuro do agronegócio com inovação tecnológica</h1>
+        <p>
+          As soluções da AgroFuture são feitas para otimizar os processos e
+          trazer mais eficiência ao campo.
+        </p>
+        <!-- <a href="#contato" class="cta-button">Entre em contato</a> -->
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+      <div class="container about-grid">
+        <div class="about-content">
+          <h2>Sobre a AgroFuture</h2>
+          <p>
+            A AgroFuture é uma empresa inovadora, focada em trazer as mais
+            recentes tecnologias para o agronegócio. Acreditamos que o futuro do
+            campo depende de soluções inteligentes, sustentáveis e eficientes.
+          </p>
+        </div>
+        <div class="about-image">
+          <img
+            src="https://images.pexels.com/photos/2933243/pexels-photo-2933243.jpeg?cs=srgb&dl=pexels-jk04-2933243.jpg&fm=jpg"
+            alt="Imagem sobre AgroFuture"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section class="innovation" id="inovacao">
+      <div class="container">
+        <div class="innovation-header">
+          <h2>Inovação no Agronegócio</h2>
+          <p>
+            Conheça as soluções que estão mudando a forma como o agronegócio
+            opera.
+          </p>
+        </div>
+        <div class="innovation-grid">
+          <div class="innovation-card">
+            <div class="innovation-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Sustentabilidade</h3>
+            <p>
+              Desenvolvemos soluções que integram sustentabilidade e tecnologia,
+              promovendo práticas agrícolas mais responsáveis e eficientes.
+            </p>
+          </div>
+          <div class="innovation-card">
+            <div class="innovation-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Automação Inteligente</h3>
+            <p>
+              Nossas soluções automatizam processos agrícolas com inteligência
+              artificial, aumentando a precisão e a produtividade.
+            </p>
+          </div>
+          <div class="innovation-card">
+            <div class="innovation-icon">
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+            <h3>Monitoramento Climático</h3>
+            <p>
+              Utilizamos tecnologias avançadas de monitoramento para ajudar na
+              tomada de decisões com base nas condições climáticas e ambientais.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Accordion Section -->
+    <section class="accordion">
+      <div class="container">
+        <h2>FAQ - Perguntas Frequentes</h2>
+        <div class="accordion-item">
+          <button class="accordion-header">O que é AgroFuture?</button>
+          <div class="accordion-content">
+            <p>
+              A AgroFuture é uma empresa que utiliza inovação tecnológica para
+              transformar o agronegócio, oferecendo soluções inteligentes e
+              sustentáveis.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Quais soluções a AgroFuture oferece?
+          </button>
+          <div class="accordion-content">
+            <p>
+              Oferecemos soluções em automação agrícola, monitoramento
+              climático, gestão inteligente de recursos e muito mais para
+              melhorar a eficiência do agronegócio.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Como posso entrar em contato?
+          </button>
+          <div class="accordion-content">
+            <p>
+              Você pode entrar em contato conosco através do nosso formulário de
+              contato ou enviar uma mensagem diretamente para o WhatsApp.
+              Estamos prontos para ajudá-lo!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+      /* Accordion Section */
+      .accordion {
+        padding: 4rem 0;
+        background: var(--light);
+        color: var(--dark);
+      }
+
+      .accordion h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        background: linear-gradient(45deg, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .accordion-item {
+        margin-bottom: 1rem;
+      }
+
+      .accordion-header {
+        width: 100%;
+        padding: 1.5rem;
+        text-align: left;
+        background: var(--primary);
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .accordion-header:hover {
+        background: var(--secondary);
+      }
+
+      .accordion-content {
+        padding: 1rem 2rem;
+        background: var(--gray);
+        border-radius: 10px;
+        display: none;
+        transition: all 0.3s ease;
+      }
+
+      .accordion-item.active .accordion-content {
+        display: block;
+      }
+
+      .accordion-item.active .accordion-header {
+        background: var(--secondary);
+      }
+    </style>
+    <!-- CSS -->
+    <style>
+      /* Contact Section */
+      .contact {
+        padding: 8rem 0;
+        background: var(--light);
+        color: var(--dark); /* Garantir que o texto tenha bom contraste */
+      }
+
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      .contact-info h2 {
+        font-size: 2.5rem; /* Ajustado para responsividade */
+        margin-bottom: 1.5rem;
+        background: linear-gradient(45deg, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .contact-form {
+        background: #f0f0f000;
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: var(--dark);
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 2px solid #f0f0f0;
+        background: var(--light);
+        border-radius: 10px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: 2px solid var(--primary);
+        box-shadow: 0 0 10px rgba(0, 150, 255, 0.4); /* Destaque de foco */
+      }
+
+      .cta-button {
+        padding: 1rem 2rem;
+        background: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%; /* Botão ocupa toda a largura do container */
+      }
+
+      .cta-button:hover,
+      .cta-button:focus {
+        background-color: var(--secondary); /* Efeito de hover */
+      }
+
+      /* Responsividade */
+      @media (max-width: 768px) {
+        .contact-grid {
+          grid-template-columns: 1fr; /* Formatação de uma coluna em dispositivos pequenos */
+        }
+
+        .contact-info h2 {
+          font-size: 2rem;
+        }
+
+        .cta-button {
+          width: auto; /* Botão não ocupa 100% em telas pequenas */
+        }
+      }
+    </style>
+    <script>
+      // Accordion functionality
+      const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+      accordionHeaders.forEach((header) => {
+        header.addEventListener("click", () => {
+          const item = header.parentElement;
+          item.classList.toggle("active");
+
+          // Fecha outros itens
+          document.querySelectorAll(".accordion-item").forEach((otherItem) => {
+            if (otherItem !== item) {
+              otherItem.classList.remove("active");
+            }
+          });
+        });
+      });
+    </script>
+    
+    <!-- Stats Section -->
+    <section class="stats" id="estatisticas">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <h3>5+</h3>
+          <p>Anos de experiência no mercado</p>
+        </div>
+        <div class="stat-item">
+          <h3>200+</h3>
+          <p>Projetos realizados com sucesso</p>
+        </div>
+        <div class="stat-item">
+          <h3>30+</h3>
+          <p>Clientes satisfeitos</p>
+        </div>
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p>Compromisso com a inovação</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Entre em Contato</h2>
+          <p>
+            Tem interesse em saber mais? Entre em contato conosco e vamos
+            conversar sobre como nossas soluções podem transformar seu negócio.
+          </p>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="post" id="contactForm">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder="Digite seu nome"
+                aria-label="Nome"
+              />
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                required
+                placeholder="Digite seu telefone"
+                aria-label="Telefone"
+                pattern="\(\d{2}\)\s\d{5}-\d{4}"
+                title="Telefone no formato (XX) XXXXX-XXXX"
+              />
+            </div>
+            <div class="form-group">
+              <button
+                type="submit"
+                class="cta-button"
+                aria-label="Enviar formulário"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-logo"><span>Agro</span>Future</div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="footer-text">
+          <p>&copy; 2024 AgroFuture. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  });
+</script>
